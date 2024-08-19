@@ -1,0 +1,40 @@
+ACTION:  comprar produto 
+
+/comprarProduto -> Client_Controller -> comprar_produto 
+
+
+obter produto por id 
+quantidade 
+
+check se o produto tem estoque e nessa quantidade. 
+
+if ok 
+    adicionar_carrinho 
+    redirect("loja")
+else 
+    redirect("loja", "O produto não tem mais estoque")
+
+/comprarProduto -> Client_Controller -> comprar_produto 
+
+
+obter produto por id 
+quantidade 
+
+NOVA LOGICA
+
+        carrinho = verificar se o carrinho ja existe = obter_carrinho_por_id_usuario
+         se nao criar o carrinho. 
+
+        
+         adicionar produto ao carinho_item.
+
+         redirect("cliente")
+
+
+client -> controller -> 
+
+    carrinho = Obter_Ccarrinho_por_id_do_usuario
+    se o carrinho existir
+    $data["quantidade_de_produtoo"] =  quantidade carrinho_item
+
+    se o carrrinho nao exister
